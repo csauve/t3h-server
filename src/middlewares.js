@@ -10,7 +10,7 @@ import csurf from "csurf";
 export default function setup(app, config) {
 
   //throttle clients to mitigate DoS attacks
-  app.use("/", new RateLimit(config.rateLimit));
+  app.use(new RateLimit(config.rateLimit));
 
   //compress response bodies
   app.use(compression());
