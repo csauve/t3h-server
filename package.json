@@ -1,0 +1,33 @@
+{
+  "name": "t3h-server",
+  "version": "0.0.1",
+  "description": "Personal Express-based service framework",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepublishOnly": "rm -rf dist && babel src --out-dir dist"
+  },
+  "author": "csauve <connorsauve@gmail.com> (http://t3hz0r.com)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "boxen": "^1.3.0",
+    "cfonts": "^1.1.3",
+    "chalk": "^2.3.0",
+    "compression": "^1.7.1",
+    "cookie-parser": "^1.4.3",
+    "csurf": "^1.9.0",
+    "express": "^4.16.2",
+    "express-rate-limit": "^2.11.0",
+    "helmet": "^3.9.0",
+    "hpp": "^0.2.2",
+    "morgan": "^1.9.0",
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
