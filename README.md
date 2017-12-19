@@ -46,3 +46,4 @@ rm -rf dist && npx babel src --out-dir dist
 * CSRF protection (or make part of t3h-ui)
 * Authentication, authorization
 * HTTP/2 support
+* Secrets management
